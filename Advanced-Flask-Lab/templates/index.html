@@ -52,7 +52,16 @@
                         <img src="{{url_for('static',filename='images/thumbs/03.jpg')}}" alt="" />
                         <h3>to USA</h3>
                       </a>
+
                 </div>  
+                   			{% for postt in postts%}
+                      <div>
+                      <a href="">
+                        <img src="{{postt}}" alt="" />
+                        <h3>{{posts[postt]}}</h3>
+                      </a>
+                      </div>
+                        {% endfor %}   
 
 							</section>
 
